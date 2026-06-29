@@ -1,10 +1,10 @@
 package ls_test
 
 import (
+	gloo "github.com/gloo-foo/framework/patterns"
 	"github.com/spf13/afero"
 
-	. "github.com/gloo-foo/cmd-ls"
-	gloo "github.com/gloo-foo/framework/patterns"
+	command "github.com/gloo-foo/cmd-ls"
 )
 
 func ExampleLs_basic() {
@@ -15,7 +15,7 @@ func ExampleLs_basic() {
 	_ = afero.WriteFile(fs, "b.txt", []byte("beta"), 0o644)
 
 	gloo.MustRun(
-		Ls(".", LsFs{Fs: fs}),
+		command.Ls(".", command.LsFs{Fs: fs}),
 	)
 	// Output:
 	// a.txt

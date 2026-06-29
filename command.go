@@ -7,9 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/spf13/afero"
-
 	gloo "github.com/gloo-foo/framework"
+	"github.com/spf13/afero"
 )
 
 // LsFs injects the filesystem Ls reads from. Tests pass an in-memory fs

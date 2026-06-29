@@ -6,11 +6,11 @@ import (
 	"slices"
 	"testing"
 
+	gloo "github.com/gloo-foo/framework"
+	"github.com/gloo-foo/framework/patterns"
 	"github.com/spf13/afero"
 
 	command "github.com/gloo-foo/cmd-ls"
-	gloo "github.com/gloo-foo/framework"
-	"github.com/gloo-foo/framework/patterns"
 )
 
 // collect lists /dir on an in-memory fixture and returns the emitted lines in

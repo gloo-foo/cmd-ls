@@ -5,10 +5,10 @@ import (
 	"slices"
 	"testing"
 
+	gloo "github.com/gloo-foo/framework"
 	"github.com/spf13/afero"
 
 	ls "github.com/gloo-foo/cmd-ls/alias"
-	gloo "github.com/gloo-foo/framework"
 )
 
 // The alias package re-exports the constructor and flag constants under
