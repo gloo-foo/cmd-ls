@@ -3,7 +3,7 @@ module github.com/gloo-foo/cmd-ls
 go 1.26.4
 
 require (
-	github.com/gloo-foo/framework v0.1.7
+	github.com/gloo-foo/framework v0.1.9
 	github.com/spf13/afero v1.15.0
 )
 
